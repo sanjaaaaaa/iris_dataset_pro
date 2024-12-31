@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iris Classifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Iris Dataset Classifier</h1>
+    <div class="form-container">
+      <div class="form">
+        <h2>Enter First Data Point</h2>
+        <input type="number" id="sepalLength1" placeholder="Sepal Length">
+        <input type="number" id="sepalWidth1" placeholder="Sepal Width">
+        <input type="number" id="petalLength1" placeholder="Petal Length">
+        <input type="number" id="petalWidth1" placeholder="Petal Width">
+      </div>
+      <div class="form">
+        <h2>Enter Second Data Point</h2>
+        <input type="number" id="sepalLength2" placeholder="Sepal Length">
+        <input type="number" id="sepalWidth2" placeholder="Sepal Width">
+        <input type="number" id="petalLength2" placeholder="Petal Length">
+        <input type="number" id="petalWidth2" placeholder="Petal Width">
+      </div>
+    </div>
+    <button onclick="classifyAndCompare()">Classify and Compare</button>
+    <div id="results">
+      <h2>Results</h2>
+      <p id="classification1">Class 1: </p>
+      <p id="classification2">Class 2: </p>
+      <canvas id="comparisonChart"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
